@@ -1,15 +1,18 @@
 package com.ritik.RestDemo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
 @Component
+@Entity
 public class JobPost {
 
 
-
+        @Id
         private int postId;
         private String postProfile;
         private String postDesc;
